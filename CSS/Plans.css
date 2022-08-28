@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    user-select: none;
+}
+  
+.logo {
+    width: 150px;
+    height: 60px;
+    margin: 20px 10px;
+}
+  
+.header{
+    height: 100px;
+    background: black;
+    box-shadow: 0 3px 15px black;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.header ul{
+    float: right;
+    margin-right: 30px;
+}
+.header ul li{
+    display: inline-block;
+}
+.header ul li a{
+    color: white;
+    display: block;
+    padding: 15px 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: black;
+    transition: .5s;
+}
+.header ul li a:hover,
+.header ul li a.active{
+    color: #23dbdb;
+}
+  .header ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+.header ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .5s linear;
+}
+.header ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid black;
+    border-top: none;
+}
+.header ul ul li a{
+    line-height: 50px;
+}
+.header ul ul ul{
+    border-top: none;
+}
+.header ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.header ul ul li a i{
+    margin-left: 45px;
+}
+  
+.body h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no {
+    color: red;
+    margin-right: 20px;
+}
+
+.yes {
+    color: greenyellow;
+    margin-right: 20px;
+}
+
+.body ul {
+    display: flex;
+    justify-content: center;
+}
+
+.body ul li {
+    width: 250px;
+    margin: 100px 30px;
+}
+
+.body ul li p {
+    margin: 20px 0px;
+}
+
+.body .free {
+    border: 10px solid blue;
+    padding: 20px;
+    position: relative;
+    animation: movesleft 5s;
+    box-shadow: 0 3px 15px blue;
+}
+
+.body .silver {
+    border: 10px solid silver;
+    padding: 20px;
+    position: relative;
+    animation: movesleft 3s;
+    box-shadow: 0 3px 15px silver;
+}
+
+.body .gold {
+    border: 10px solid gold;
+    padding: 20px;
+    position: relative;
+    animation: movesright 3s;
+    box-shadow: 0 3px 15px gold;
+}
+
+.body .platinum {
+    border: 10px solid black;
+    padding: 20px;
+    position: relative;
+    animation: movesright 5s;
+    box-shadow: 0 3px 15px black;
+}
+
+
+@keyframes movesleft{
+    from {left: -1350px;}
+    to {left: 0px;}
+}
+
+@keyframes movesright{
+    from {right: -1350px;}
+    to {right: 0px}
+}
+
+.body ul li h2 {
+    text-align: center;
+}
+
+.body ul li .col-blue {
+    color: blue;
+}
+
+.body ul li .col-silver {
+    color: silver;
+}
+
+.body ul li .col-gold {
+    color: gold;
+}
+
+
+
+.button-free {
+    background-color: rgb(104, 104, 253);
+    border: none;
+    color: white;
+    padding: 24px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-silver {
+    background-color: rgb(211, 211, 211);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-gold {
+    background-color: rgb(250, 220, 54);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-platinum {
+    background-color: rgb(51, 51, 51);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+
+  .footer {
+    background-color: white;
+  }
+  
+  .footer h5{
+    font-weight: bold;
+  }
+  
+  
+  .footer ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer ul li {
+    padding: 50px 70px;
+  }
+  
+  .footer .icon a {
+    color:black;
+  }
+  
+  .footer .text a {
+    display: block;
+    color: black;
+  }
+  
+  .footer2 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 30px 0px;
+  }
+
+

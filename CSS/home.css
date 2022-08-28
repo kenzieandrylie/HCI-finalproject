@@ -1,0 +1,311 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  user-select: none;
+}
+  
+.logo {
+  width: 150px;
+  height: 60px;
+  margin: 20px 10px;
+}
+
+.header{
+  height: 100px;
+  background: black;
+  box-shadow: 0 3px 15px #2b2b2b;
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+.header ul{
+  float: right;
+  margin-right: 30px;
+}
+.header ul li{
+  display: inline-block;
+}
+.header ul li a{
+  color: white;
+  display: block;
+  padding: 15px 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: black;
+  transition: .5s;
+}
+.header ul li a:hover,
+.header ul li a.active{
+  color: #23dbdb;
+}
+.header ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+.header ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .5s linear;
+}
+.header ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid black;
+  border-top: none;
+}
+.header ul ul li a{
+  line-height: 50px;
+
+}
+.header ul ul ul{
+  border-top: none;
+}
+.header ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+
+}
+.header ul ul li a i{
+  margin-left: 45px;
+}
+/* bagian content */
+
+/* carousell */
+.carousell{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .carousell-image-container{
+    display: flex;
+    transition: all 0.4s ease-in-out;
+    
+  }
+  .carousell-image-container img{
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .carousell-btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    z-index: 1; 
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    padding: 8px;
+    opacity: 1;
+    transition: .5s ease;
+  }
+  .carousell-btn:hover{
+    background-color: white;
+    color: black;
+  }
+  .left-btn{
+    left: 16px;
+  }
+  .right-btn{
+    right: 16px;
+  }
+
+/* carousell overlay judul*/
+.overlay {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .textoverlay{
+      color: white;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: center;
+  }
+  
+  .carousell:hover .overlay {
+    opacity: 1;
+  }
+
+  .carousell:hover .carousell-btn{
+    opacity: 1;
+  }
+/* content tengah */
+.content-tengah{
+  padding: 2%;
+}
+.content-tengah-judul{
+  display: flex;
+  justify-content: space-between;
+}
+.see-all a{
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 20px;
+}
+.see-all a:hover{
+  text-decoration: underline;
+}
+.recommended{
+  color: grey;
+  font-size: 20px;
+}
+
+.recommendedImg{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.recImg img{
+  width: 200px;
+  height: 250px;
+}
+
+.recImg:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+
+/* content bawah */
+.content-bawah-judul{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.content-bawah-judul a{
+  text-decoration: none;
+  color: dodgerblue;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.content-bawah-judul a:hover{
+  text-decoration: underline;
+}
+.content-bawah-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.content-bawah-text{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.benIcon img{
+    width: 200px;
+    height: 200px;
+}
+
+.desc1{
+    margin-left: 10px;
+}
+.desc3{
+    margin-right: 20px;
+}
+.judul{
+    font-weight: bold;
+    font-size: 20px;
+}
+.ket{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: gray;
+}
+.footer {
+  background-color: white;
+}
+
+.footer h5{
+  font-weight: bold;
+}
+
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer ul li {
+  padding: 50px 70px;
+}
+
+.footer .icon a {
+  color:black;
+}
+
+.footer .text a {
+  display: block;
+  color: black;
+}
+
+.footer2 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 30px 0px;
+}
+
+@media (max-width: 500px){
+  .recommendedImg{
+    display: block;
+    margin-left: 20%;
+  }
+  .recImg{
+    margin: 10px;
+  }
+  .footer>ul {
+    display: block;
+  }
+  .content-bawah-icon{
+    display: none;
+  }
+  .content-bawah-text{
+    display: block;
+    padding: 2%;
+  }
+  .content-tengah-judul{
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-bawah-judul{
+    margin-bottom: 30px;
+  }
+  .carousell{
+    display: none;
+  }
+  .header{
+    display: block;
+    width: fit-content;
+  }
+  .header>ul{
+    display: inline-block;
+  }
+  .carousell-btn{
+    display: none;
+  }
+}

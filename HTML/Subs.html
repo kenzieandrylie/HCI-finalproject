@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subs</title>
+    <link rel="stylesheet" href="../css/subs.css">
+</head>
+<body>
+    <body>
+        <div class="header">
+            <img src="../ASSETS/logo.PNG" alt="LOGO" class="logo">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li>
+                    <a href="./Dramas.html">Dramas</a>
+                    <ul>
+                        <li><a href="#">By Rating</a>
+                    <ul>
+                        <li><a href="#">5 Star</a></li>
+                        <li><a href="#">4 Star</a></li>
+                        <li><a href="#">3 Star</a></li>
+                        <li><a href="#">2 Star</a></li>
+                        <li><a href="#">1 Star</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">By Genre</a>
+                        <ul>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Thriller</a></li>
+                            <li><a href="#">Horror</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Fantasy</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Mystery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">By Country</a>
+                    <ul>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Antartica</a></li>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">South America</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Plans.html">Plans</a>
+                    <ul>
+                        <li><a href="#">Silver</a></li>
+                        <li><a href="#">Gold</a></li>
+                        <li><a href="#">Diamond</a></li>
+                    </ul>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Subs.html" class="active">Subscription</a></li>
+            </ul>
+        </div>
+
+    <div class="content">
+        <form action="./Home.html" id="subsForm">
+            
+            <label>Email</label>
+            <input type="text" name="emailInput" id="email" placeholder="Enter your email" >
+            <span id="errorEmail"></span>
+
+            <label>Password</label>
+            <input type="password" name="passInput" id="password" placeholder="Enter your password" >
+            <span id="errorPass"></span>
+
+            <label>Confirm Password</label>
+            <input type="password" name="cpassInput" id="confirmpassword" placeholder="Confirm your password" >
+            <span id="errorCPass"></span>
+
+            <label>Gender</label>
+            <div class="gender">
+            <div class="male"> <input type="radio" name="genderInput" value="male" width="10px"> Male </div>
+            <div class="female"><input type="radio" name="genderInput" value="female" width="10px"> Female </div>
+            <div class="other"><input type="radio" name="genderInput" value="others" width="10px"> Others</div>
+            </div>
+            <span id="errorGender"></span>
+
+            <label>Choose a plan</label>
+            <div>
+            <select name="planInput" id="plan">
+                <option value="" class="planPH">--unselected--</option>
+                <option value="silver" style="background-color:whitesmoke;">Silver</option>
+                <option value="gold" style="background-color: yellow;">Gold</option>
+                <option value="diamond" style="background-color:aqua;">Diamond</option>
+            </select>
+            </div>
+            <span id="errorPlan"></span>
+
+            <div class="cek">
+            <input type="checkbox" name="agree" value="true" id="agree">I accept the terms and conditions of Letflix
+            </div>
+            <span id="errorTerm"></span>
+            <center><button type="submit" class="submitBtn">Register</button></center>
+
+
+        </form>
+
+        <div class="gambar">
+            <img src="../img/usericon.png" alt="" width="350px" height="350px">
+            <div class="desc">
+                <div>
+                have problem with registration? <br>
+                <a href="">Contact Us</a>
+                </div>
+                <span id="errorMessage"></span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <ul>
+            <li class="text">
+                <h5>CONTACT US</h5>
+                <a href="#">Contact</a>
+                <a href="#">Term of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+                <a href="#">Help</a>
+            </li>
+            <li class="text">
+                <h5>COMPANY</h5>
+                <a href="#">About</a>
+                <a href="#">Call Us <br> 021-123-456-789</a>
+                <a href="#">Location <br> Binus Alam Sutera</a>
+            </li>
+            <li class="icon">
+                <h5>FOLLOW US</h5>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-line fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <p>© 2021 LeTflix All Rights Reserved</p>
+    </div>
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <script src="../js/subs.js"></script>
+</body>
+</html>
